@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduManage — Дашборд</title>
+  
+  <script>(function(){const t=localStorage.getItem('edu_theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-brand">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+           fill="none" stroke="#5B6FBF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+      </svg>
+      <div>
+        <div class="logo-text">EduManage</div>
+        <div class="logo-tagline">Навчайте та навчайтесь <em>ефективно!</em></div>
+      </div>
+    </div>
+
+    
+    <div style="display:flex;align-items:center;gap:10px;padding:14px 18px 10px;border-bottom:1px solid var(--border)">
+      <div id="sidebar-avatar" style="
+        width:34px;height:34px;border-radius:50%;
+        background:var(--primary);color:var(--white);
+        display:flex;align-items:center;justify-content:center;
+        font-size:.82rem;font-weight:700;flex-shrink:0">?</div>
+      <div style="min-width:0">
+        <div id="sidebar-user-name" style="font-size:.88rem;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap"></div>
+        <div id="sidebar-user-role" style="font-size:.73rem;color:var(--text-muted)"></div>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav" id="sidebar-nav">
+      
+    </nav>
+
+    <div class="sidebar-footer">
+      
+      <div class="theme-toggle" onclick="toggleTheme()" id="theme-toggle" title="Змінити тему">
+        
+        <div class="theme-switch"></div>
+      </div>
+      <div class="nav-item logout" onclick="handleLogout()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+          <polyline points="16 17 21 12 16 7"/>
+          <line x1="21" y1="12" x2="9" y2="12"/>
+        </svg>
+        <span>Вийти</span>
+      </div>
+    </div>
+
+  </aside>
+
+  
+  <main class="main-wrapper">
+
+    
+    <div class="topbar" id="topbar">
+      <button class="back-btn hidden" id="back-btn" onclick="goBack()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+             fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"/>
+          <polyline points="12 19 5 12 12 5"/>
+        </svg>
+        Назад
+      </button>
+      <nav class="breadcrumbs" id="breadcrumbs"></nav>
+    </div>
+
+    
+    <div id="main-content"></div>
+
+  </main>
+
+  
+  <div class="toast-container" id="toast-container"></div>
+
+  <script src="js/api.js"></script>
+  <script src="js/dashboard-core.js"></script>
+  <script src="js/dashboard-courses.js"></script>
+  <script src="js/dashboard-schedule.js"></script>
+  <script src="js/dashboard-sections.js"></script>
+  <script src="js/dashboard-modals-create.js"></script>
+  <script src="js/dashboard-modals-view.js"></script>
+  <script src="js/dashboard-modals-util.js"></script>
+  <script src="js/dashboard-init.js"></script>
+</body>
+</html>

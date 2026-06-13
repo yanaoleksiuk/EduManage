@@ -1,0 +1,23 @@
+# Build output
+build/
+out/
+
+# CMake cache
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+
+# Compiled binaries
+*.exe
+*.out
+*.app
+
+# Runtime data files
+data/
+
+# IDE files
+.vs/
+.vscode/
+*.user
+*.suo
+.idea/

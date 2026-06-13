@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduManage — Навчайте та навчайтесь ефективно</title>
+  <script>(function(){const t=localStorage.getItem('edu_theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  
+  <header class="ln-nav">
+    <a class="ln-logo" href="#">
+      <svg width="34" height="34" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M25 15.625C26.5625 9.45704 32.4639 6.30763 45.3125 6.25001C45.5179 6.24924 45.7214 6.28912 45.9114 6.36737C46.1013 6.44562 46.2738 6.56068 46.4191 6.70593C46.5643 6.85118 46.6794 7.02373 46.7576 7.21365C46.8359 7.40357 46.8758 7.6071 46.875 7.81251V35.9375C46.875 36.3519 46.7104 36.7493 46.4174 37.0424C46.1243 37.3354 45.7269 37.5 45.3125 37.5C32.8125 37.5 27.9834 40.0205 25 43.75C22.0342 40.0391 17.1875 37.5 4.68751 37.5C3.72267 37.5 3.12501 36.7139 3.12501 35.749V7.81251C3.12424 7.6071 3.16412 7.40357 3.24237 7.21365C3.32062 7.02373 3.43568 6.85118 3.58093 6.70593C3.72618 6.56068 3.89873 6.44562 4.08865 6.36737C4.27857 6.28912 4.4821 6.24924 4.68751 6.25001C17.5361 6.30763 23.4375 9.45704 25 15.625ZM25 15.625V43.75V15.625Z"
+              fill="currentColor"/>
+        <path d="M25 43.75C22.0342 40.0391 17.1875 37.5 4.68751 37.5C3.72267 37.5 3.12501 36.7139 3.12501 35.749V7.81251C3.12424 7.6071 3.16412 7.40357 3.24237 7.21365C3.32062 7.02373 3.43568 6.85118 3.58093 6.70593C3.72618 6.56068 3.89873 6.44562 4.08865 6.36737C4.27857 6.28912 4.4821 6.24924 4.68751 6.25001C17.5361 6.30763 23.4375 9.45704 25 15.625C26.5625 9.45704 32.4639 6.30763 45.3125 6.25001C45.5179 6.24924 45.7214 6.28912 45.9114 6.36737C46.1013 6.44562 46.2738 6.56068 46.4191 6.70593C46.5643 6.85118 46.6794 7.02373 46.7576 7.21365C46.8359 7.40357 46.8758 7.6071 46.875 7.81251V35.9375C46.875 36.3519 46.7104 36.7493 46.4174 37.0424C46.1243 37.3354 45.7269 37.5 45.3125 37.5C32.8125 37.5 27.9834 40.0205 25 43.75ZM25 15.625V43.75"
+              stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div>
+        <div class="ln-logo-name">EduManage</div>
+        <div class="ln-logo-tagline">Навчайте та навчайтесь ефективно</div>
+      </div>
+    </a>
+    <div class="ln-nav-end">
+      <button class="ln-btn-link" onclick="openModal('register-modal')">Зареєструватися</button>
+      <button class="ln-btn-solid" onclick="openModal('login-modal')">Увійти</button>
+    </div>
+  </header>
+
+  
+  <section class="ln-hero">
+    <div class="ln-hero-content">
+      <h1 class="ln-hero-title">
+        Ваша платформа<br>для&nbsp;ефективного навчання&nbsp;з&nbsp;<span>EduManage</span>
+      </h1>
+      <p class="ln-hero-sub">
+        Керуйте курсами, відстежуйте прогрес і взаємодійте зі студентами&nbsp;— все в одному місці.
+      </p>
+      <button class="btn-start" onclick="openModal('register-modal')">Почати</button>
+    </div>
+  </section>
+
+  
+  <div class="ln-banner">Можливості на сайті</div>
+
+  
+  <section class="ln-features">
+    <div class="ln-features-grid">
+
+      
+      <div class="ln-card">
+        <div class="ln-card-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </div>
+        <div class="ln-card-title">Для викладача</div>
+        <ul class="ln-feat-list">
+          <li>
+            <svg class="feat-ico" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            Створення курсів, тем та уроків
+          </li>
+          <li>
+            <svg class="feat-ico" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            Складання тестів із автоматичною перевіркою
+          </li>
+          <li>
+            <svg class="feat-ico" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            Управління студентами та групами
+          </li>
+          <li>
+            <svg class="feat-ico" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            Перегляд виконаних домашніх завдань
+          </li>
+          <li>
+            <svg class="feat-ico" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            Розклад занять та планування
+          </li>
+        </ul>
+      </div>
+
+      
+      <div class="ln-card">
+        <div class="ln-card-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+          </svg>
+        </div>
+        <div class="ln-card-title">Для студента</div>
+        <ul class="ln-feat-list">
+          <li>
+            <svg class="feat-ico" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            Доступ до всіх курсів та матеріалів
+          </li>
+          <li>
+            <svg class="feat-ico" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            Виконання тестів та перевірка результатів
+          </li>
+          <li>
+            <svg class="feat-ico" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            Здача домашніх завдань онлайн
+          </li>
+          <li>
+            <svg class="feat-ico" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            Відстеження особистого прогресу
+          </li>
+          <li>
+            <svg class="feat-ico" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            Персональний розклад занять
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  
+  <footer class="ln-footer">
+    <div class="ln-footer-inner">
+
+      <div>
+        <div class="ln-footer-logo">
+          <svg width="30" height="30" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25 15.625C26.5625 9.45704 32.4639 6.30763 45.3125 6.25001C45.5179 6.24924 45.7214 6.28912 45.9114 6.36737C46.1013 6.44562 46.2738 6.56068 46.4191 6.70593C46.5643 6.85118 46.6794 7.02373 46.7576 7.21365C46.8359 7.40357 46.8758 7.6071 46.875 7.81251V35.9375C46.875 36.3519 46.7104 36.7493 46.4174 37.0424C46.1243 37.3354 45.7269 37.5 45.3125 37.5C32.8125 37.5 27.9834 40.0205 25 43.75C22.0342 40.0391 17.1875 37.5 4.68751 37.5C3.72267 37.5 3.12501 36.7139 3.12501 35.749V7.81251C3.12424 7.6071 3.16412 7.40357 3.24237 7.21365C3.32062 7.02373 3.43568 6.85118 3.58093 6.70593C3.72618 6.56068 3.89873 6.44562 4.08865 6.36737C4.27857 6.28912 4.4821 6.24924 4.68751 6.25001C17.5361 6.30763 23.4375 9.45704 25 15.625ZM25 15.625V43.75V15.625Z"
+                  fill="currentColor"/>
+            <path d="M25 43.75C22.0342 40.0391 17.1875 37.5 4.68751 37.5C3.72267 37.5 3.12501 36.7139 3.12501 35.749V7.81251C3.12424 7.6071 3.16412 7.40357 3.24237 7.21365C3.32062 7.02373 3.43568 6.85118 3.58093 6.70593C3.72618 6.56068 3.89873 6.44562 4.08865 6.36737C4.27857 6.28912 4.4821 6.24924 4.68751 6.25001C17.5361 6.30763 23.4375 9.45704 25 15.625C26.5625 9.45704 32.4639 6.30763 45.3125 6.25001C45.5179 6.24924 45.7214 6.28912 45.9114 6.36737C46.1013 6.44562 46.2738 6.56068 46.4191 6.70593C46.5643 6.85118 46.6794 7.02373 46.7576 7.21365C46.8359 7.40357 46.8758 7.6071 46.875 7.81251V35.9375C46.875 36.3519 46.7104 36.7493 46.4174 37.0424C46.1243 37.3354 45.7269 37.5 45.3125 37.5C32.8125 37.5 27.9834 40.0205 25 43.75ZM25 15.625V43.75"
+                  stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div>
+            <div style="font-size:.95rem;font-weight:700;color:var(--ln-navy)">EduManage</div>
+            <div class="ln-footer-tagline">Навчайте та навчайтесь ефективно!</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="ln-social-title">Ми у соцмережах</div>
+        <div class="ln-social-links">
+          <a href="#" class="ln-social-link" aria-label="Facebook">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+          <a href="#" class="ln-social-link" aria-label="Instagram">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a href="#" class="ln-social-link" aria-label="Telegram">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"/>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="ln-copy">
+        © 2025 EduManage.<br>Усі права захищені.
+      </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="modal-overlay" id="login-modal">
+    <div class="modal">
+      <div class="modal-header">
+        <span class="modal-title">Вхід в акаунт</span>
+        <button class="modal-close" onclick="closeModal('login-modal')">✕</button>
+      </div>
+      <form onsubmit="handleLogin(event)">
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-input" id="login-email"
+                 placeholder="your@email.com" autocomplete="email" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Пароль</label>
+          <input type="password" class="form-input" id="login-password"
+                 placeholder="••••••" autocomplete="current-password" required>
+        </div>
+        <div id="login-error" class="form-error hidden"></div>
+        <button id="login-btn" type="submit" class="btn btn-primary w-full">Увійти</button>
+        <p class="form-hint">Немає акаунта?
+          <a href="#" onclick="switchModal('login-modal','register-modal')">Зареєструватись</a>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  
+  <div class="modal-overlay" id="register-modal">
+    <div class="modal">
+      <div class="modal-header">
+        <span class="modal-title">Реєстрація</span>
+        <button class="modal-close" onclick="closeModal('register-modal')">✕</button>
+      </div>
+      <form onsubmit="handleRegister(event)">
+        <div class="role-selector">
+          <div class="role-option active" data-role="student" onclick="selectRole('student')">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:4px"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            Студент
+          </div>
+          <div class="role-option" data-role="teacher" onclick="selectRole('teacher')">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:4px"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            Викладач
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Ім'я</label>
+            <input type="text" class="form-input" id="reg-first-name"
+                   placeholder="Іван" autocomplete="given-name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Прізвище</label>
+            <input type="text" class="form-input" id="reg-last-name"
+                   placeholder="Іванов" autocomplete="family-name" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-input" id="reg-email"
+                 placeholder="your@email.com" autocomplete="email" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Пароль</label>
+          <input type="password" class="form-input" id="reg-password"
+                 placeholder="Мін. 6 символів" autocomplete="new-password" required minlength="6">
+        </div>
+        <div id="register-error" class="form-error hidden"></div>
+        <button id="reg-btn" type="submit" class="btn btn-primary w-full">Зареєструватись</button>
+        <p class="form-hint">Вже є акаунт?
+          <a href="#" onclick="switchModal('register-modal','login-modal')">Увійти</a>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
