@@ -46,6 +46,7 @@ EduManage.exe      # Windows
 Відкрийте браузер і перейдіть за цією адресою.
 
 Структура проекту
+```
 EduManage/
 ├── api/               # Маршрути REST API (Crow)
 │   ├── ApiServer.h/cpp
@@ -66,8 +67,9 @@ EduManage/
 │   ├── css/main.css
 │   └── js/            # Модульний JS (api, core, sections, modals)
 └── CMakeLists.txt
-
+```
 API (основні ендпоінти)
+```
 POST   /api/auth/register
 POST   /api/auth/login
 GET    /api/teachers/:id/courses
@@ -83,6 +85,7 @@ POST   /api/teachers/:id/groups
 DELETE /api/teachers/:tid/groups/:gid
 GET    /api/students/:id/progress
 GET    /api/students/:id/schedule
+```
 Особливості реалізації
 BinaryStorage<T> — власний шаблонний клас для зберігання даних у бінарних .dat файлах без зовнішніх СУБД
 CourseService — фасад бізнес-логіки, ізолює маршрути від прямої роботи зі сховищем
